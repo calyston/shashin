@@ -4,17 +4,18 @@ Responsive photo website using Pexel's API. Photos from Pexels are extracted usi
 
 ### Live Preview: 
 
-
+https://calyston-shashin.netlify.app/
 
 ## Key Features
 
 - API call
-- CSS grid
-- Search function
+- Responsive CSS grid
+- Search functionality
+- Load more button
 
 
 ## Technologies Used
-JavaScript, CSS, HTML.
+JavaScript, JSON, CSS3, HTML5.
 
 #### Written by Christine Lyston
 #### Date: May 2021
