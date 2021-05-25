@@ -43,10 +43,11 @@ function generatePictures(data) {
   data.photos.forEach(photo => {
     const galleryImg = document.createElement('div');
     galleryImg.classList.add('gallery-img');
-    galleryImg.innerHTML = `<img src=${photo.src.medium}></img>
+    galleryImg.innerHTML = `
+    <img src=${photo.src.large}></img>
     <div class="gallery-text">
       <p>${photo.photographer}</p>
-      <a href=${photo.src.original} target="blank">Download</a>
+      <a href=${photo.src.original} target="blank">View</a>
     </div>`;
     gallery.appendChild(galleryImg);
   });

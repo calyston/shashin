@@ -30,7 +30,7 @@ header {
   min-height: 30vh;
 }
 
-header h2 {
+header h1 {
   padding: 3rem;
 }
 
@@ -76,8 +76,12 @@ header h2 {
   width: 80vw;
   margin: auto;
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-  align-items: flex-end;
+  align-items:flex-end;
   gap: 3rem;
+}
+
+.gallery-img {
+  height: 80%;
 }
 
 .gallery-img img {
