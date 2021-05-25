@@ -40,17 +40,22 @@ function generatePictures(data) {
     <p>${photo.photographer}</p>`;
     gallery.appendChild(galleryImg);
   });
-}
+};
 
 async function curatedPhotos() {
   const data = await fetchAPI("https://api.pexels.com/v1/curated?per_page=16&page=1");
   generatePictures(data);
-}
+};
 
 async function searchPhotos(search) {
+  clear();
   const data = await fetchAPI(`https://api.pexels.com/v1/search?query=${search}+query&per_page=16&page=1`);
   generatePictures(data);
-}
+};
+
+function clear() {
+  gallery.innerHTML = "";
+  searchInput.value = "";
+};
 
 curatedPhotos();
-searchPhotos();
