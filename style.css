@@ -18,7 +18,7 @@ h3 {
   font-size: 2.4rem;
 }
 
-h4, p, li {
+h4, p, li, a {
   font-size: 1.6rem;
 }
 
@@ -35,6 +35,7 @@ header h2 {
 }
 
 #logo {
+  font-size: 5rem;
   font-family: 'Sacramento', cursive;
   text-decoration: none;
   color: black;
@@ -62,5 +63,67 @@ header h2 {
   cursor: pointer;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
-  transition: 0.3s ease;
+  transition: 0.5s ease-in-out;
+}
+
+.search-form button:hover {
+  background-color: gainsboro;
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  width: 80vw;
+  margin: auto;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  align-items: flex-end;
+  gap: 3rem;
+}
+
+.gallery-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: grey;
+  margin-top: 1.5rem;
+  cursor: default;
+}
+
+.gallery-text a {
+  color: grey;
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
+}
+
+.gallery-text a:hover {
+  color: #E3CBD0;
+}
+
+/* More Button */
+
+.nav-button {
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.more {
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  border: none;
+  background-color: #E3CBD0;
+  cursor: pointer;
+  border-radius: 1rem;
+  transition: 0.5s ease-in-out;
+}
+
+.more:hover {
+  background-color: gainsboro;
 }
