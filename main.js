@@ -17,7 +17,13 @@ async function curatedPhotos() {
     }
   });
   const data = await dataFetch.json();
-  console.log(data);
+  data.photos.forEach(photo => {
+    const galleryImg = document.createElement('div');
+    galleryImg.classList.add('gallery-img');
+    galleryImg.innerHTML = `<img src=${photo.src.medium}></img>
+    <p>${photo.photographer}</p>`;
+    gallery.appendChild(galleryImg);
+  });
 }
 
 curatedPhotos();
