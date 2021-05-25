@@ -1,0 +1,66 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+h4, p, li {
+  font-size: 1.6rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 30vh;
+}
+
+header h2 {
+  padding: 3rem;
+}
+
+#logo {
+  font-family: 'Sacramento', cursive;
+  text-decoration: none;
+  color: black;
+}
+
+.search-form {
+  display: flex;
+  padding: 1.5rem;
+}
+
+.search-form input {
+  font-size: 1.6rem;
+  width: 100%;
+  padding: 1.5rem;
+  border: 2px solid #E3CBD0;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.search-form button {
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  border: none;
+  background-color: #E3CBD0;
+  cursor: pointer;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  transition: 0.3s ease;
+}
