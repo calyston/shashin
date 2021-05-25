@@ -37,7 +37,10 @@ function generatePictures(data) {
     const galleryImg = document.createElement('div');
     galleryImg.classList.add('gallery-img');
     galleryImg.innerHTML = `<img src=${photo.src.medium}></img>
-    <p>${photo.photographer}</p>`;
+    <div class="gallery-text">
+      <p>${photo.photographer}</p>
+      <a href=${photo.src.original} target="blank">Download</a>
+    </div>`;
     gallery.appendChild(galleryImg);
   });
 };
