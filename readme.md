@@ -2,6 +2,8 @@
 
 Responsive photo website using Pexel's API. Photos from Pexels are extracted using it's API and is displayed using CSS grid.
 
+![](shashin-gif.gif)
+
 ### Live Preview: 
 
 https://calyston-shashin.netlify.app/
